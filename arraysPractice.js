@@ -121,8 +121,12 @@ var getRandomArbitrary = function() {
 var str = 'this is my sentence';
 //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
-  //Code Here
+function reverse(str) {
+  var newStr = str.split(' ').reverse().join(' ');
+  return newStr;
+}
 
+reverse(str);
 
 //Next Problem
 
@@ -156,7 +160,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
-  //Code Here
+function maker(arr) {
+  
+}
 
 
 
