@@ -56,7 +56,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
 function evenFinder(nums){
-  for(i = 0; i < 0; i++){
+  for(i = 0; i < nums.length; i++){
     if(nums[i]%2 === 1){
       nums.splice(i,1);
       i--;
@@ -64,6 +64,8 @@ function evenFinder(nums){
   }
   return nums;
 }
+
+evenFinder(nums);
 
 
 //Next problem
@@ -75,7 +77,9 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
 
-  //Code Here
+function divider(numbersArray){
+  
+}
 
 
 //Next Problem
