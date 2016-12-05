@@ -78,8 +78,24 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
 function divider(numbersArray){
-  
-}
+  var newArr = [];
+  var oddArr = [];
+  var evenArr = [];
+  for(i = 0; i < numbersArray.length; i++) {
+   if(numbersArray[i] % 2 === 0) {
+     evenArr.push(numbersArray[i]);
+   }
+   else {
+     oddArr.push(numbersArray[i]);
+
+   }
+  }
+  newArr.push(evenArr);
+  newArr.push(oddArr);
+  return newArr;
+  }
+
+  divider(numbersArray);
 
 
 //Next Problem
