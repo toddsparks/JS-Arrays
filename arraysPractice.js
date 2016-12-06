@@ -199,10 +199,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 function addTen(numbers){
   for(i = 0; i < numbers.length; i++){
-    numbers[i] += 10;
+    numbers[i] = parseInt(numbers[i])  + 10;
   }
   return numbers;
 }
+
+addTen(numbers);
 
 
 
@@ -279,13 +281,16 @@ var colt = {
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
-  //Code Here
+devMountainEmployees.push("tyler", "cahlan", "ryan", "colt");
+console.log(devMountainEmployees);
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
-  //Code Here
-
+  // for(i = 0; i < devMountainEmployees.length; i++){
+  //   devMountainEmployees.splice("calhan");
+  // }
+  //
 
 
 
@@ -326,20 +331,34 @@ of Data is to have an Array full of objects. */
 
 //Create an empty array called users.
 
-  //Code Here
+   var users = [];
 
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
 
 //include this as one of the objects in your array.
-var user1 = {
-    name: 'Tyler McGinnis',
-    email: 'tylermcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniateLoop'
-};
-
-//Your Code Here
+// var user1 = {
+//     name: 'Tyler McGinnis',
+//     email: 'tylermcginnis33@gmail.com',
+//     password: 'iLoveJavaScript',
+//     username: 'infiniateLoop'
+// };
+//
+// var user2 = {
+//   name: "Tim Powers",
+//   email: 'time@example.com'
+//   password: 'tiwensdlk',
+//   username: 'timepowersyeah'
+// };
+//
+// var user3 = {
+//   name: 'todd sparks',
+//   email: "toddsparks@example.com",
+//   password: 'tesldkj',
+//   username: 'toddsparksuser'
+// };
+//
+// users.push('user1', 'user2', 'user3');
 
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
